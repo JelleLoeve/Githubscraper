@@ -1,0 +1,29 @@
+span.displayname {
+    font-weight: bold;
+}
+
+.information {
+    width: 200px;
+}
+
+.scraperinformation {
+	align-items: flex-start;
+	display:flex;
+}
+
+.calendar-graph text {
+    font-size: 13px;
+}
+
+.topbar {
+	align-items: flex-start;
+	
+}
+
+.topbarbutton {
+	border-style: outset;
+	width: 150px;
+	display: inline-block;
+	text-align: center;
+
+}

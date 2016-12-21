@@ -8,6 +8,7 @@ class githubscraper
 	public $DOM;
 	public $activitysvg;
 	public $displayName;
+    public $sth;
 	
 	function __construct($url, $displayName)
     {
@@ -54,6 +55,12 @@ class githubscraper
         return $innerHTML;
     }
 }
-	
+
+function get_githubaccounts_from_db()
+    {
+        $sth = $db->prepare("SELECT * FROM githubaccounts ORDER BY id ASC");
+        $sth->execute();
+        $events = $sth->fetchAll(PDO::FETCH_ASSOC);
+    }
 	
 ?>
